@@ -55,12 +55,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="124.6376811594203" y="131.25"/>
+            <point key="canvasLocation" x="135" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Recipe Page View Controller-->
         <scene sceneID="7Yv-Ae-r2v">
             <objects>
-                <viewController id="kTB-zB-Jr5" sceneMemberID="viewController">
+                <viewController id="kTB-zB-Jr5" customClass="recipePageViewController" customModule="breadNbutter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xJr-gr-pXV">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -71,6 +71,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+<<<<<<< HEAD
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdY-7e-BQM">
                                 <rect key="frame" x="147" y="433" width="120" height="30"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
@@ -119,6 +120,39 @@
                                 </state>
                                 <connections>
                                     <segue destination="shz-kk-wvA" kind="show" id="uXe-oQ-a3N"/>
+=======
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32p-7b-0DA">
+                                <rect key="frame" x="148" y="286" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Breakfast"/>
+                                <connections>
+                                    <action selector="breakfastButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="WwB-qL-kwG"/>
+                                    <segue destination="shz-kk-wvA" kind="show" id="uXe-oQ-a3N"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdY-7e-BQM">
+                                <rect key="frame" x="148" y="391" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Lunch"/>
+                                <connections>
+                                    <action selector="lunchButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="44T-P4-rmU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1d-J3-f24">
+                                <rect key="frame" x="148" y="490" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dinner"/>
+                                <connections>
+                                    <action selector="dinnerButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="N65-lv-Nnb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDh-nL-OSc">
+                                <rect key="frame" x="148" y="581" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dessert"/>
+                                <connections>
+                                    <action selector="dessertButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="Hms-cC-Vui"/>
+>>>>>>> 48747eb3fab1ca6c2298c738d80e3fbb4e3abf37
                                 </connections>
                             </button>
                         </subviews>
@@ -151,21 +185,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHd-Pn-yhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+<<<<<<< HEAD
             <point key="canvasLocation" x="924.63768115942037" y="131.25"/>
+=======
+            <point key="canvasLocation" x="923" y="134"/>
+>>>>>>> 48747eb3fab1ca6c2298c738d80e3fbb4e3abf37
         </scene>
-        <!--View Controller-->
+        <!--Meal Page View Controller-->
         <scene sceneID="YSj-cb-WG0">
             <objects>
-                <viewController id="shz-kk-wvA" sceneMemberID="viewController">
+                <viewController id="shz-kk-wvA" customClass="mealPageViewController" customModule="breadNbutter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2eE-tw-Azx">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="F0l-uC-VYA">
-                                <rect key="frame" x="0.0" y="112" width="379" height="44"/>
+                                <rect key="frame" x="0.0" y="112" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F0l-uC-VYA" id="ifi-LD-Ahw">
-                                    <rect key="frame" x="0.0" y="0.0" width="379" height="43.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
@@ -177,8 +215,13 @@
                                     <segue destination="kTB-zB-Jr5" kind="show" id="T2T-4z-XZ0"/>
                                 </connections>
                             </button>
+<<<<<<< HEAD
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breakfast Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvZ-v0-Oi2">
                                 <rect key="frame" x="123" y="63" width="169" height="21"/>
+=======
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvZ-v0-Oi2">
+                                <rect key="frame" x="123" y="66" width="169" height="21"/>
+>>>>>>> 48747eb3fab1ca6c2298c738d80e3fbb4e3abf37
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -196,15 +239,19 @@
                         </barButtonItem>
                     </toolbarItems>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="mealRecipePage" destination="fvZ-v0-Oi2" id="uNP-HY-QQ5"/>
+                        <outlet property="recipesMade" destination="F0l-uC-VYA" id="tod-tK-zgL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="v9W-5M-mxd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1707.2463768115942" y="133.92857142857142"/>
         </scene>
-        <!--View Controller-->
+        <!--Skeleton View Controller-->
         <scene sceneID="6sq-FH-R0w">
             <objects>
-                <viewController id="jhK-ls-1nL" sceneMemberID="viewController">
+                <viewController id="jhK-ls-1nL" customClass="SkeletonViewController" customModule="breadNbutter" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ejc-ri-ckz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -259,7 +306,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="tsp" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Lxk-EX-ysT">
-                                <rect key="frame" x="258" y="263" width="64" height="30"/>
+                                <rect key="frame" x="258" y="263" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -301,7 +348,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="tsp" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="88D-tx-9sK">
-                                <rect key="frame" x="258" y="336" width="64" height="30"/>
+                                <rect key="frame" x="258" y="336" width="110" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
@@ -446,7 +493,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9X-Kg-teu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2428.985507246377" y="133.25892857142856"/>
+            <point key="canvasLocation" x="2496" y="134"/>
         </scene>
     </scenes>
     <resources>
@@ -455,7 +502,12 @@
         <image name="watermelonRecipePage" width="216" height="114"/>
     </resources>
     <inferredMetricsTieBreakers>
+<<<<<<< HEAD
         <segue reference="PyY-Rd-EIh"/>
         <segue reference="mEA-4B-3hy"/>
+=======
+        <segue reference="uXe-oQ-a3N"/>
+        <segue reference="T2T-4z-XZ0"/>
+>>>>>>> 48747eb3fab1ca6c2298c738d80e3fbb4e3abf37
     </inferredMetricsTieBreakers>
 </document>
