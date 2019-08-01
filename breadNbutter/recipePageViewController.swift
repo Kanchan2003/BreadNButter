@@ -19,7 +19,6 @@ class recipePageViewController: UIViewController {
         appDelegate.mealTime = "lunch"
     }
     
-    
     @IBAction func dinnerButtonPressed(_ sender: Any) {
         appDelegate.mealTime = "dinner"
     }

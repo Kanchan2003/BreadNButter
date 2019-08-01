@@ -18,17 +18,20 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4X-6Q-IzD">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d4X-6Q-IzD">
                                 <rect key="frame" x="87" y="77" width="0.0" height="0.0"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="75"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="watermelonBackground" translatesAutoresizingMaskIntoConstraints="NO" id="CLY-fR-LQj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watermelonBackground" translatesAutoresizingMaskIntoConstraints="NO" id="CLY-fR-LQj">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZ2-Eq-6kd">
-                                <rect key="frame" x="62" y="77" width="292" height="97"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zZ2-Eq-6kd">
+                                <rect key="frame" x="40" y="77" width="334" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="55"/>
                                 <state key="normal" title="Get Started">
                                     <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -39,23 +42,12 @@
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="CLY-fR-LQj" secondAttribute="trailing" id="7GV-wb-eHb"/>
-                            <constraint firstItem="zZ2-Eq-6kd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="33" id="QNX-mo-q01"/>
-                            <constraint firstItem="zZ2-Eq-6kd" firstAttribute="centerX" secondItem="CLY-fR-LQj" secondAttribute="centerX" id="RgR-h5-aSv"/>
-                            <constraint firstItem="zZ2-Eq-6kd" firstAttribute="top" secondItem="d4X-6Q-IzD" secondAttribute="top" id="UBk-eT-Zon"/>
-                            <constraint firstItem="CLY-fR-LQj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="f0E-pT-CBK"/>
-                            <constraint firstAttribute="bottom" secondItem="CLY-fR-LQj" secondAttribute="bottom" id="lUe-sD-fg8"/>
-                            <constraint firstItem="zZ2-Eq-6kd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="95" id="oJk-ei-59j"/>
-                            <constraint firstItem="CLY-fR-LQj" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="rAm-Ok-0MG"/>
-                            <constraint firstItem="zZ2-Eq-6kd" firstAttribute="leading" secondItem="d4X-6Q-IzD" secondAttribute="trailing" constant="8" symbolic="YES" id="rmy-Eu-LuT"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="135" y="134"/>
+            <point key="canvasLocation" x="134.78260869565219" y="133.92857142857142"/>
         </scene>
         <!--Recipe Page View Controller-->
         <scene sceneID="7Yv-Ae-r2v">
@@ -65,79 +57,62 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Av-7w-d0x">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Your Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Av-7w-d0x">
                                 <rect key="frame" x="47.5" y="245" width="319" height="85"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="55"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdY-7e-BQM">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdY-7e-BQM">
                                 <rect key="frame" x="148" y="391" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Lunch"/>
                                 <connections>
-                                    <action selector="lunchButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="44T-P4-rmU"/>
+                                    <action selector="lunchButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="9b1-B0-VCl"/>
                                     <segue destination="shz-kk-wvA" kind="show" id="Ygv-4L-vE0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1d-J3-f24">
-                                <rect key="frame" x="148" y="490" width="120" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1d-J3-f24">
+                                <rect key="frame" x="148" y="433" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Dinner"/>
                                 <connections>
-                                    <action selector="dinnerButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="N65-lv-Nnb"/>
+                                    <action selector="dinnerButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="pZL-oc-sWM"/>
                                     <segue destination="shz-kk-wvA" kind="show" id="jcG-39-BoD"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="watermelonRecipePage" translatesAutoresizingMaskIntoConstraints="NO" id="ELb-tQ-Da1">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="watermelonRecipePage" translatesAutoresizingMaskIntoConstraints="NO" id="ELb-tQ-Da1">
                                 <rect key="frame" x="-47" y="676" width="509" height="317"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="317" id="67m-KJ-Q0T"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="upsidedownwatermelon" translatesAutoresizingMaskIntoConstraints="NO" id="w4F-IP-RsL">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="upsidedownwatermelon" translatesAutoresizingMaskIntoConstraints="NO" id="w4F-IP-RsL">
                                 <rect key="frame" x="-97.5" y="-96" width="609" height="333"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="609" id="7xn-Yr-U1d"/>
-                                    <constraint firstAttribute="height" constant="333" id="YNJ-gA-d1c"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32p-7b-0DA">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32p-7b-0DA">
                                 <rect key="frame" x="113" y="349" width="188" height="30"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="rIr-1L-nuU"/>
-                                </constraints>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
                                 <state key="normal" title="Breakfast">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="dessertButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="Hms-cC-Vui"/>
+                                    <action selector="breakfastButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="wKa-ew-v4a"/>
                                     <segue destination="shz-kk-wvA" kind="show" id="Suw-3c-9pR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UII-CN-UEW">
+                                <rect key="frame" x="148" y="471" width="120" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Dessert"/>
+                                <connections>
+                                    <action selector="dessertButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="YTo-aI-QUW"/>
+                                    <segue destination="shz-kk-wvA" kind="show" id="cUZ-ku-u7i"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="ELb-tQ-Da1" firstAttribute="centerX" secondItem="xJr-gr-pXV" secondAttribute="centerX" id="7Fq-Ew-8iJ"/>
-                            <constraint firstAttribute="top" secondItem="Z1d-J3-f24" secondAttribute="bottom" constant="59" id="94R-eO-0pU"/>
-                            <constraint firstItem="32p-7b-0DA" firstAttribute="top" secondItem="xJr-gr-pXV" secondAttribute="top" constant="349" id="9Dz-Je-HAG"/>
-                            <constraint firstItem="Z1d-J3-f24" firstAttribute="top" secondItem="hdY-7e-BQM" secondAttribute="bottom" constant="58" id="BiH-Wg-2Vx"/>
-                            <constraint firstItem="32p-7b-0DA" firstAttribute="top" secondItem="9Av-7w-d0x" secondAttribute="bottom" constant="19" id="GNw-fJ-nXN"/>
-                            <constraint firstItem="ELb-tQ-Da1" firstAttribute="top" secondItem="xJr-gr-pXV" secondAttribute="top" constant="676" id="Grc-gj-NDZ"/>
-                            <constraint firstItem="hdY-7e-BQM" firstAttribute="leading" secondItem="uNU-bj-9CT" secondAttribute="leading" constant="147" id="I9D-cN-zHt"/>
-                            <constraint firstItem="Z1d-J3-f24" firstAttribute="leading" secondItem="hdY-7e-BQM" secondAttribute="leading" id="JKm-MD-OcZ"/>
-                            <constraint firstItem="32p-7b-0DA" firstAttribute="leading" secondItem="uNU-bj-9CT" secondAttribute="leading" constant="113" id="Orq-mb-cGJ"/>
-                            <constraint firstItem="ELb-tQ-Da1" firstAttribute="leading" secondItem="xJr-gr-pXV" secondAttribute="leadingMargin" constant="-67" id="Xhc-fe-4Ff"/>
-                            <constraint firstItem="hdY-7e-BQM" firstAttribute="centerY" secondItem="xJr-gr-pXV" secondAttribute="centerY" id="azH-UW-fxy"/>
-                            <constraint firstItem="w4F-IP-RsL" firstAttribute="centerX" secondItem="xJr-gr-pXV" secondAttribute="centerX" id="d02-Gm-1N4"/>
-                            <constraint firstItem="32p-7b-0DA" firstAttribute="centerX" secondItem="9Av-7w-d0x" secondAttribute="centerX" id="dbf-ki-Cbv"/>
-                            <constraint firstItem="w4F-IP-RsL" firstAttribute="top" secondItem="xJr-gr-pXV" secondAttribute="top" constant="-96" id="e7r-Lf-vh7"/>
-                            <constraint firstAttribute="leading" secondItem="uNU-bj-9CT" secondAttribute="leading" constant="136" id="ff1-HO-YIb"/>
-                            <constraint firstAttribute="centerX" secondItem="32p-7b-0DA" secondAttribute="centerX" id="hOm-rh-t74"/>
-                            <constraint firstAttribute="centerX" secondItem="Z1d-J3-f24" secondAttribute="centerX" id="p8D-we-cFr"/>
-                            <constraint firstItem="hdY-7e-BQM" firstAttribute="top" secondItem="32p-7b-0DA" secondAttribute="bottom" constant="54" id="qto-ZF-Xjv"/>
-                            <constraint firstItem="32p-7b-0DA" firstAttribute="centerX" secondItem="w4F-IP-RsL" secondAttribute="centerX" id="rMy-XU-NIu"/>
-                            <constraint firstItem="Z1d-J3-f24" firstAttribute="trailing" secondItem="hdY-7e-BQM" secondAttribute="trailing" id="uHL-LY-IS3"/>
-                        </constraints>
                         <viewLayoutGuide key="safeArea" id="uNU-bj-9CT"/>
                     </view>
                 </viewController>
@@ -454,6 +429,6 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="jcG-39-BoD"/>
-        <segue reference="mEA-4B-3hy"/>
+        <segue reference="T2T-4z-XZ0"/>
     </inferredMetricsTieBreakers>
 </document>
