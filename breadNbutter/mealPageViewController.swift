@@ -12,21 +12,20 @@ class mealPageViewController: UIViewController {
 
     @IBOutlet weak var mealRecipePage: UILabel!
     @IBOutlet weak var recipesMade: UITableViewCell!
-    
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let vc = recipePageViewController()
-        if (vc.mealTime == "breakfast") {
+        if (appDelegate.mealTime == "breakfast") {
             mealRecipePage.text = "Breakfast Recipes"
         }
-        else if (vc.mealTime == "lunch") {
+        if (appDelegate.mealTime == "lunch") {
             mealRecipePage.text = "Lunch Recipes"
         }
-        else if (vc.mealTime == "dinner") {
+        if (appDelegate.mealTime == "dinner") {
             mealRecipePage.text = "Dinner Recipes"
         }
-        else if (vc.mealTime == "dessert") {
+        if (appDelegate.mealTime == "dessert") {
             mealRecipePage.text = "Dessert Recipes"
         }
         

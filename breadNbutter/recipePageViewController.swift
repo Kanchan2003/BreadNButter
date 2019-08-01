@@ -9,23 +9,23 @@
 import UIKit
 
 class recipePageViewController: UIViewController {
-    var mealTime : String = ""
+    let appDelegate = UIApplication.shared.delegate as! AppDelegate
     
     @IBAction func breakfastButtonPressed(_ sender: Any) {
-        mealTime = "breakfast"
+        appDelegate.mealTime = "breakfast"
     }
     
     @IBAction func lunchButtonPressed(_ sender: Any) {
-        mealTime = "lunch"
+        appDelegate.mealTime = "lunch"
     }
     
     
     @IBAction func dinnerButtonPressed(_ sender: Any) {
-        mealTime = "dinner"
+        appDelegate.mealTime = "dinner"
     }
     
     @IBAction func dessertButtonPressed(_ sender: Any) {
-        mealTime = "dessert"
+        appDelegate.mealTime = "dessert"
     }
     
     override func viewDidLoad() {

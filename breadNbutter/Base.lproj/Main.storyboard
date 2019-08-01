@@ -79,6 +79,7 @@
                                 <state key="normal" title="Lunch"/>
                                 <connections>
                                     <action selector="lunchButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="44T-P4-rmU"/>
+                                    <segue destination="shz-kk-wvA" kind="show" id="Ygv-4L-vE0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1d-J3-f24">
@@ -87,6 +88,7 @@
                                 <state key="normal" title="Dinner"/>
                                 <connections>
                                     <action selector="dinnerButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="N65-lv-Nnb"/>
+                                    <segue destination="shz-kk-wvA" kind="show" id="jcG-39-BoD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDh-nL-OSc">
@@ -95,6 +97,7 @@
                                 <state key="normal" title="Dessert"/>
                                 <connections>
                                     <action selector="dessertButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="Hms-cC-Vui"/>
+                                    <segue destination="shz-kk-wvA" kind="show" id="Suw-3c-9pR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -115,7 +118,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" translatesAutoresizingMaskIntoConstraints="NO" id="F0l-uC-VYA">
-                                <rect key="frame" x="0.0" y="112" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="125" width="414" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="F0l-uC-VYA" id="ifi-LD-Ahw">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
@@ -123,7 +126,7 @@
                                 </tableViewCellContentView>
                             </tableViewCell>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nr0-CO-giB">
-                                <rect key="frame" x="20" y="769" width="76" height="30"/>
+                                <rect key="frame" x="20" y="769" width="65" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
@@ -131,23 +134,25 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvZ-v0-Oi2">
-                                <rect key="frame" x="123" y="66" width="169" height="21"/>
+                                <rect key="frame" x="123" y="83" width="169" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E0d-w4-bOK">
+                                <rect key="frame" x="291" y="769" width="103" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Recipe"/>
+                                <connections>
+                                    <segue destination="jhK-ls-1nL" kind="show" id="DNm-FY-kVJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="3gY-IS-7nE"/>
                     </view>
-                    <toolbarItems>
-                        <barButtonItem title="Item" systemItem="add" id="pd6-pP-WXE">
-                            <connections>
-                                <segue destination="jhK-ls-1nL" kind="show" id="Ui0-96-pRe"/>
-                            </connections>
-                        </barButtonItem>
-                    </toolbarItems>
+                    <toolbarItems/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <outlet property="mealRecipePage" destination="fvZ-v0-Oi2" id="uNP-HY-QQ5"/>
@@ -384,9 +389,9 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7S-hP-Fdu">
-                                <rect key="frame" x="20" y="773" width="76" height="30"/>
+                                <rect key="frame" x="20" y="773" width="167" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Back"/>
+                                <state key="normal" title="Back Without Saving"/>
                                 <connections>
                                     <segue destination="shz-kk-wvA" kind="show" id="PyY-Rd-EIh"/>
                                 </connections>
@@ -403,7 +408,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y9X-Kg-teu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2496" y="134"/>
+            <point key="canvasLocation" x="2495.6521739130435" y="133.92857142857142"/>
         </scene>
     </scenes>
     <resources>
