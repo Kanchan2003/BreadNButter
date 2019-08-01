@@ -11,7 +11,9 @@
 		4D4C5AEE22EF9698001A8E4C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C5AEC22EF9698001A8E4C /* Main.storyboard */; };
 		4D4C5AF022EF9699001A8E4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C5AEF22EF9699001A8E4C /* Assets.xcassets */; };
 		4D4C5AF322EF9699001A8E4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C5AF122EF9699001A8E4C /* LaunchScreen.storyboard */; };
-		CC00662822F0FDBD008C6D95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC00662722F0FDBD008C6D95 /* AppDelegate.swift */; };
+		CC9AE85022F215A9007F3F71 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9AE84F22F215A8007F3F71 /* CoreData.framework */; };
+		CC9AE87622F2190D007F3F71 /* breadNbutter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC9AE87422F2190D007F3F71 /* breadNbutter.xcdatamodeld */; };
+		CC9AE87822F2385E007F3F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9AE87722F2385E007F3F71 /* AppDelegate.swift */; };
 		CCB67CC222F2097F003BCE83 /* mealPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB67CC122F2097F003BCE83 /* mealPageViewController.swift */; };
 		CCB67CC422F20B6C003BCE83 /* recipePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB67CC322F20B6C003BCE83 /* recipePageViewController.swift */; };
 		CCB67CC622F20D05003BCE83 /* SkeletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB67CC522F20D05003BCE83 /* SkeletonViewController.swift */; };
@@ -24,7 +26,9 @@
 		4D4C5AEF22EF9699001A8E4C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D4C5AF222EF9699001A8E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D4C5AF422EF9699001A8E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		CC00662722F0FDBD008C6D95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../AppDelegate.swift; sourceTree = "<group>"; };
+		CC9AE84F22F215A8007F3F71 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		CC9AE87522F2190D007F3F71 /* breadNbutter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = breadNbutter.xcdatamodel; sourceTree = "<group>"; };
+		CC9AE87722F2385E007F3F71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCB67CC122F2097F003BCE83 /* mealPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealPageViewController.swift; sourceTree = "<group>"; };
 		CCB67CC322F20B6C003BCE83 /* recipePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipePageViewController.swift; sourceTree = "<group>"; };
 		CCB67CC522F20D05003BCE83 /* SkeletonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonViewController.swift; sourceTree = "<group>"; };
@@ -35,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC9AE85022F215A9007F3F71 /* CoreData.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,9 +49,9 @@
 		4D4C5ADC22EF9698001A8E4C = {
 			isa = PBXGroup;
 			children = (
-				CC00662722F0FDBD008C6D95 /* AppDelegate.swift */,
 				4D4C5AE722EF9698001A8E4C /* breadNbutter */,
 				4D4C5AE622EF9698001A8E4C /* Products */,
+				CC9AE84E22F215A8007F3F71 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -61,6 +66,7 @@
 		4D4C5AE722EF9698001A8E4C /* breadNbutter */ = {
 			isa = PBXGroup;
 			children = (
+				CC9AE87722F2385E007F3F71 /* AppDelegate.swift */,
 				4D4C5AEA22EF9698001A8E4C /* ViewController.swift */,
 				4D4C5AEC22EF9698001A8E4C /* Main.storyboard */,
 				CCB67CC522F20D05003BCE83 /* SkeletonViewController.swift */,
@@ -69,8 +75,17 @@
 				4D4C5AEF22EF9699001A8E4C /* Assets.xcassets */,
 				4D4C5AF122EF9699001A8E4C /* LaunchScreen.storyboard */,
 				4D4C5AF422EF9699001A8E4C /* Info.plist */,
+				CC9AE87422F2190D007F3F71 /* breadNbutter.xcdatamodeld */,
 			);
 			path = breadNbutter;
+			sourceTree = "<group>";
+		};
+		CC9AE84E22F215A8007F3F71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CC9AE84F22F215A8007F3F71 /* CoreData.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,7 +162,8 @@
 				CCB67CC222F2097F003BCE83 /* mealPageViewController.swift in Sources */,
 				CCB67CC622F20D05003BCE83 /* SkeletonViewController.swift in Sources */,
 				CCB67CC422F20B6C003BCE83 /* recipePageViewController.swift in Sources */,
-				CC00662822F0FDBD008C6D95 /* AppDelegate.swift in Sources */,
+				CC9AE87622F2190D007F3F71 /* breadNbutter.xcdatamodeld in Sources */,
+				CC9AE87822F2385E007F3F71 /* AppDelegate.swift in Sources */,
 				4D4C5AEB22EF9698001A8E4C /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,7 +311,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GW77WRDWG2;
 				INFOPLIST_FILE = breadNbutter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -313,7 +329,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = GW77WRDWG2;
 				INFOPLIST_FILE = breadNbutter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -348,6 +364,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CC9AE87422F2190D007F3F71 /* breadNbutter.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CC9AE87522F2190D007F3F71 /* breadNbutter.xcdatamodel */,
+			);
+			currentVersion = CC9AE87522F2190D007F3F71 /* breadNbutter.xcdatamodel */;
+			path = breadNbutter.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 4D4C5ADD22EF9698001A8E4C /* Project object */;
 }
