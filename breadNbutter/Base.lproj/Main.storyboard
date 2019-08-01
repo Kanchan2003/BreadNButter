@@ -71,7 +71,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-<<<<<<< HEAD
+
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdY-7e-BQM">
                                 <rect key="frame" x="147" y="433" width="120" height="30"/>
                                 <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
@@ -120,39 +120,6 @@
                                 </state>
                                 <connections>
                                     <segue destination="shz-kk-wvA" kind="show" id="uXe-oQ-a3N"/>
-=======
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="32p-7b-0DA">
-                                <rect key="frame" x="148" y="286" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Breakfast"/>
-                                <connections>
-                                    <action selector="breakfastButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="WwB-qL-kwG"/>
-                                    <segue destination="shz-kk-wvA" kind="show" id="uXe-oQ-a3N"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdY-7e-BQM">
-                                <rect key="frame" x="148" y="391" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Lunch"/>
-                                <connections>
-                                    <action selector="lunchButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="44T-P4-rmU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z1d-J3-f24">
-                                <rect key="frame" x="148" y="490" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dinner"/>
-                                <connections>
-                                    <action selector="dinnerButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="N65-lv-Nnb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TDh-nL-OSc">
-                                <rect key="frame" x="148" y="581" width="120" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Dessert"/>
-                                <connections>
-                                    <action selector="dessertButtonPressed:" destination="kTB-zB-Jr5" eventType="touchUpInside" id="Hms-cC-Vui"/>
->>>>>>> 48747eb3fab1ca6c2298c738d80e3fbb4e3abf37
                                 </connections>
                             </button>
                         </subviews>
@@ -185,11 +152,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cHd-Pn-yhw" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-<<<<<<< HEAD
+
             <point key="canvasLocation" x="924.63768115942037" y="131.25"/>
-=======
-            <point key="canvasLocation" x="923" y="134"/>
->>>>>>> 48747eb3fab1ca6c2298c738d80e3fbb4e3abf37
+
+
         </scene>
         <!--Meal Page View Controller-->
         <scene sceneID="YSj-cb-WG0">
@@ -215,13 +181,10 @@
                                     <segue destination="kTB-zB-Jr5" kind="show" id="T2T-4z-XZ0"/>
                                 </connections>
                             </button>
-<<<<<<< HEAD
+
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Breakfast Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvZ-v0-Oi2">
                                 <rect key="frame" x="123" y="63" width="169" height="21"/>
-=======
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Recipes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvZ-v0-Oi2">
-                                <rect key="frame" x="123" y="66" width="169" height="21"/>
->>>>>>> 48747eb3fab1ca6c2298c738d80e3fbb4e3abf37
+
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -502,12 +465,11 @@
         <image name="watermelonRecipePage" width="216" height="114"/>
     </resources>
     <inferredMetricsTieBreakers>
-<<<<<<< HEAD
+
         <segue reference="PyY-Rd-EIh"/>
         <segue reference="mEA-4B-3hy"/>
-=======
+
         <segue reference="uXe-oQ-a3N"/>
         <segue reference="T2T-4z-XZ0"/>
->>>>>>> 48747eb3fab1ca6c2298c738d80e3fbb4e3abf37
     </inferredMetricsTieBreakers>
 </document>

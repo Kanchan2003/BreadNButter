@@ -12,8 +12,8 @@
 		4D4C5AF022EF9699001A8E4C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C5AEF22EF9699001A8E4C /* Assets.xcassets */; };
 		4D4C5AF322EF9699001A8E4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4C5AF122EF9699001A8E4C /* LaunchScreen.storyboard */; };
 		CC9AE85022F215A9007F3F71 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC9AE84F22F215A8007F3F71 /* CoreData.framework */; };
-		CC9AE87322F218AB007F3F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9AE87222F218AB007F3F71 /* AppDelegate.swift */; };
 		CC9AE87622F2190D007F3F71 /* breadNbutter.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CC9AE87422F2190D007F3F71 /* breadNbutter.xcdatamodeld */; };
+		CC9AE87822F2385E007F3F71 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9AE87722F2385E007F3F71 /* AppDelegate.swift */; };
 		CCB67CC222F2097F003BCE83 /* mealPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB67CC122F2097F003BCE83 /* mealPageViewController.swift */; };
 		CCB67CC422F20B6C003BCE83 /* recipePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB67CC322F20B6C003BCE83 /* recipePageViewController.swift */; };
 		CCB67CC622F20D05003BCE83 /* SkeletonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCB67CC522F20D05003BCE83 /* SkeletonViewController.swift */; };
@@ -27,8 +27,8 @@
 		4D4C5AF222EF9699001A8E4C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D4C5AF422EF9699001A8E4C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CC9AE84F22F215A8007F3F71 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
-		CC9AE87222F218AB007F3F71 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../whatever/whatever/AppDelegate.swift; sourceTree = "<group>"; };
 		CC9AE87522F2190D007F3F71 /* breadNbutter.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = breadNbutter.xcdatamodel; sourceTree = "<group>"; };
+		CC9AE87722F2385E007F3F71 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CCB67CC122F2097F003BCE83 /* mealPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mealPageViewController.swift; sourceTree = "<group>"; };
 		CCB67CC322F20B6C003BCE83 /* recipePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = recipePageViewController.swift; sourceTree = "<group>"; };
 		CCB67CC522F20D05003BCE83 /* SkeletonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkeletonViewController.swift; sourceTree = "<group>"; };
@@ -49,7 +49,6 @@
 		4D4C5ADC22EF9698001A8E4C = {
 			isa = PBXGroup;
 			children = (
-				CC9AE87222F218AB007F3F71 /* AppDelegate.swift */,
 				4D4C5AE722EF9698001A8E4C /* breadNbutter */,
 				4D4C5AE622EF9698001A8E4C /* Products */,
 				CC9AE84E22F215A8007F3F71 /* Frameworks */,
@@ -67,6 +66,7 @@
 		4D4C5AE722EF9698001A8E4C /* breadNbutter */ = {
 			isa = PBXGroup;
 			children = (
+				CC9AE87722F2385E007F3F71 /* AppDelegate.swift */,
 				4D4C5AEA22EF9698001A8E4C /* ViewController.swift */,
 				4D4C5AEC22EF9698001A8E4C /* Main.storyboard */,
 				CCB67CC522F20D05003BCE83 /* SkeletonViewController.swift */,
@@ -163,7 +163,7 @@
 				CCB67CC622F20D05003BCE83 /* SkeletonViewController.swift in Sources */,
 				CCB67CC422F20B6C003BCE83 /* recipePageViewController.swift in Sources */,
 				CC9AE87622F2190D007F3F71 /* breadNbutter.xcdatamodeld in Sources */,
-				CC9AE87322F218AB007F3F71 /* AppDelegate.swift in Sources */,
+				CC9AE87822F2385E007F3F71 /* AppDelegate.swift in Sources */,
 				4D4C5AEB22EF9698001A8E4C /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
