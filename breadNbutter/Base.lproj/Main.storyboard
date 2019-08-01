@@ -72,13 +72,6 @@
                                 <nil key="highlightedColor"/>
                             </label>
 
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdY-7e-BQM">
-                                <rect key="frame" x="147" y="433" width="120" height="30"/>
-                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="35"/>
-                                <state key="normal" title="Lunch">
-                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdY-7e-BQM">
                                 <rect key="frame" x="148" y="391" width="120" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
